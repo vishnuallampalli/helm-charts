@@ -332,7 +332,7 @@ configmapReload:
     # capabilities:
     #   drop:
     #   - ALL
-    # readOnlyRootFilesystem: true
+     readOnlyRootFilesystem: false
     # runAsUser: 65534
     # runAsNonRoot: true
     # runAsGroup: 65534
