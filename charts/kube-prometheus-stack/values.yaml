@@ -2110,7 +2110,7 @@ prometheusOperator:
     createSecretJob:
       securityContext:
         allowPrivilegeEscalation: false
-        readOnlyRootFilesystem: true
+        readOnlyRootFilesystem: false
         capabilities:
           drop:
           - ALL
@@ -2119,7 +2119,7 @@ prometheusOperator:
     patchWebhookJob:
       securityContext:
         allowPrivilegeEscalation: false
-        readOnlyRootFilesystem: true
+        readOnlyRootFilesystem: false
         capabilities:
           drop:
           - ALL
@@ -2375,7 +2375,7 @@ prometheusOperator:
   ##
   containerSecurityContext:
     allowPrivilegeEscalation: false
-    readOnlyRootFilesystem: true
+    readOnlyRootFilesystem: false
     capabilities:
       drop:
       - ALL
